@@ -16,12 +16,12 @@ O trabalho demonstra como o Apache Spark pode ser utilizado para processar grand
 [Movies Dataset (24 GB)](https://www.kaggle.com/datasets/gsimonx37/letterboxd)
 
 ## Tecnologias
-Java + Apache Spark (através o Maven)
-NodeJS
-MongoDB
-Javascript
-HTML
-CSS
+- Java + Apache Spark (através o Maven)
+- NodeJS
+- MongoDB
+- Javascript
+- HTML
+- CSS
 
 ## Cloud
-[...]
+a definir[...]
