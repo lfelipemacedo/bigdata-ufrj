@@ -2,7 +2,7 @@
 const { MongoClient } = require('mongodb');
 require('dotenv').config();
 
-MongoClient.connect(process.env.MONGO_DB, { useUnifiedTopology: true })
+MongoClient.connect(process.env.MONGO_DB || '', { useUnifiedTopology: true })
     .then(client => {
         db = client.db('letterboxd-analysis');
         app.listen(3000, () => console.log('MongoDB OK!'));
@@ -10,10 +10,12 @@ MongoClient.connect(process.env.MONGO_DB, { useUnifiedTopology: true })
     .catch(console.error);
 
 const express = require('express');
+const morgan = require('morgan');
 const cors = require('cors');
 
 /*** SERVER ***/
 const app = express();
+app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 
