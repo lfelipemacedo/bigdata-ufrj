@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "45eb6427-b94c-43df-b3e1-30ee3f086864",
+		"name": "letterboxd-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8002308"
+	},
+	"item": [
+		{
+			"name": "Por gênero e ano",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies-by-genre-and-year",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies-by-genre-and-year"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Média de avaliação por país",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/avg-rating-by-country",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"avg-rating-by-country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Média de avaliação por ano",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/avg-rating-by-year",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"avg-rating-by-year"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gêneros por país",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/genres-by-country",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"genres-by-country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lançamentos por ano",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/releases-by-country",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"releases-by-country"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
