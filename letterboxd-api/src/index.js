@@ -1,7 +1,8 @@
 /*** DATABASE ***/
 const { MongoClient } = require('mongodb');
+require('dotenv').config();
 
-MongoClient.connect('mongodb://engsoft_ufrj:123456789ES@ac-mjy99vr-shard-00-00.dhzryvz.mongodb.net:27017,ac-mjy99vr-shard-00-01.dhzryvz.mongodb.net:27017,ac-mjy99vr-shard-00-02.dhzryvz.mongodb.net:27017/?ssl=true&replicaSet=atlas-pz2lem-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0', { useUnifiedTopology: true })
+MongoClient.connect(process.env.MONGO_DB, { useUnifiedTopology: true })
     .then(client => {
         db = client.db('letterboxd-analysis');
         app.listen(3000, () => console.log('MongoDB OK!'));
