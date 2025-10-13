@@ -12,6 +12,7 @@ MongoClient.connect(process.env.MONGO_DB || '', { useUnifiedTopology: true })
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+const path = require('path');
 
 /*** SERVER ***/
 const app = express();
@@ -19,8 +20,12 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, '../public')));
+
 app.get('/', (req, res) => {
     res.send('OK!');
+
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 app.get('/avg-rating-by-country', async (req, res) => {

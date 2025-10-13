@@ -1,0 +1,13 @@
+main { display: flex; height: 100dvh; }
+aside { display: flex; width: 280px; padding: 1rem; background-color: #ececec; }
+aside ul { min-width: 100%; display: flex; flex-direction: column; }
+aside ul .nav-item { width: 100%;}
+aside ul .nav-item .nav-link { width: 100%; text-align: start; color: #7a7a7a; }
+aside ul .nav-item .nav-link.active { background-color: #ffffff; color: rgb(0, 0, 0); font-weight: 700; }
+section { flex: 1; height: 100vh; overflow: auto; }
+section table { overflow-y: auto; height: 100dvh; }
+
+.countries { display: flex; flex-direction: column; }
+.countries span { display: flex; align-items: center; }
+.countries span:not(:last-child) { border-bottom: 1px solid #ededed; }
+ul { list-style: none; padding-left: 0; margin: 0; }
